@@ -1,0 +1,125 @@
+@import "compass";
+@import "compass/reset";
+/** Reset default styles end **/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+/** General styles end **/
+
+.page {
+    width: 500px;
+    margin: 150px auto 0;
+}
+
+.sidebar-wrap {
+    padding-top: 81px;
+    background: url(../img/sidebar-top.png) top center no-repeat;
+    width: 278px;
+    .sidebar {
+        background: #b3aea5;
+        h3 {
+            color: #fff;
+            font-size: 12px;
+            margin: 0 16px;
+        }
+        .place {
+            color: #fff;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 16px;
+            margin: 0 16px;
+        }
+        .part {
+            position: relative;
+            padding: 0 16px 15px 16px;
+            border-bottom: 10px solid #433187;
+            .button {
+                background: #433187;
+                color: #fff;
+                cursor: pointer;
+                padding: 4px 18px;
+                font-size: 11px;
+            }
+            .expand-btn {
+                position: absolute;
+                bottom: -10px;
+                right: 0;
+            }
+            .location-btn {
+                display: inline-block;
+                margin-top: 7px;
+                padding: 3px 2px;
+            }
+        }
+        .part.location {
+            border: none;
+            padding: 0 16px 19px 16px;
+            .location-form {
+                background: #4e4596;
+                position: absolute;
+                top: 24px;
+                left: 16px;
+                right: 15px;
+                padding: 7px 5px 5px 5px;
+                display: none;
+                label {
+                    color: #fff;
+                    margin-right: 4px;
+                    font-size: 9px;
+                }
+                input[type="text"] {
+                    height: 15px;
+                    outline: none;
+                    border: none;
+                    padding: 0 4px;
+                    @include border-radius(5px);
+                }
+                #state {
+                    width: 196px;
+                    margin-bottom: 10px;
+                }
+                #city, #zip {
+                    width: 75px;
+                }
+                .or {
+                    color: #f7d03e;
+                    font-size: 11px;
+                }
+                .submit-btn {
+                    border: 1px solid #fff;
+                    background: #98132a;
+                    color: #fff;
+                    cursor: pointer;
+                    outline: none;
+                    padding: 0 9px;
+                    float: right;
+                    font-size: 11px;
+                    margin: 7px 2px 0 0;
+                }
+            }
+            .location-btn.active {
+                color: #f7d03e;
+            }
+        }
+    }
+}
+/**Sidebar end **/

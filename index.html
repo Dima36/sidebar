@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="page">
+        <div class="sidebar-wrap">
+            <div class="sidebar">
+                <h3>SEARCHING IN</h3>
+                <div class="place">York, Pennsylvania</div>
+                <div class="part">
+                    <div id="expand-btn" class="button expand-btn">EXPAND</div>
+                </div>
+                <div class="part expand">
+                    <div id="location-btn" class="button location-btn">EDIT LOCATION</div>
+                    <div>будут формы</div>
+                    <div class="button expand-btn">COLLAPSE</div>
+                </div>
+                <div class="part location">
+                    <div class="button location-btn">EDIT LOCATION</div>
+                    <div class="location-form">
+                        <label for="state">STATE</label><input type="text" id="state">
+                        <label for="city">CITY</label><input type="text" id="city">
+                        <span class="or">OR</span>
+                        <label for="zip">ZIP</label><input type="text" id="zip">
+                        <input class="submit-btn" type="submit" value="DONE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
