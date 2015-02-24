@@ -34,6 +34,7 @@ body {
     padding-top: 81px;
     background: url(../img/sidebar-top.png) top center no-repeat;
     width: 278px;
+    font-family: Tahoma, Verdana, sans-serif;
     .sidebar {
         background: #b3aea5;
         h3 {
@@ -66,8 +67,60 @@ body {
             }
             .location-btn {
                 display: inline-block;
-                margin-top: 7px;
+                margin-top: 5px;
                 padding: 3px 2px;
+            }
+            .block {
+                padding: 5px;
+                background: #fbf6e8;
+                margin-top: 10px;
+                &:first-child {
+                    margin-top: 7px;
+                }
+                h4 {
+                    color: #b3aea5;
+                    font-size: 11px;
+                    margin-bottom: 4px;
+                }
+                input[type="text"] {
+                    height: 15px;
+                    outline: none;
+                    border: 1px solid #adb1a4;
+                    background: #dde5c4;
+                }
+                label {
+                    color: #b3aea5;
+                    font-size: 11px;
+                    cursor: pointer;
+                    padding: 2px 0;
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                }
+                .check-box {
+                    background: url('data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk2Q0RFMTU1QkMwNjExRTQ4QzI5RjNFNjkyQzA2NzdDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk2Q0RFMTU2QkMwNjExRTQ4QzI5RjNFNjkyQzA2NzdDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTZDREUxNTNCQzA2MTFFNDhDMjlGM0U2OTJDMDY3N0MiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTZDREUxNTRCQzA2MTFFNDhDMjlGM0U2OTJDMDY3N0MiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAOAA4DAREAAhEBAxEB/8QAZAABAQAAAAAAAAAAAAAAAAAAAAkBAQEBAAAAAAAAAAAAAAAAAAACBhAAAwEBAAEEAwAAAAAAAAAAAQIEAwURAEESIiExUREAAgEEAgMAAAAAAAAAAAAAAAECITFhAxESUcHR/9oADAMBAAIRAxEAPwCqHE4nGq43Ipp5EVFNEU+tFGs+bvo75qzMzMpJJJ8kn1ndmyXZ1dyBfxONjVxM8uRFlnVa+VKJPmo0QS0aBXAX7D5IreD7gH29I7JcOrt7QHEvqx43Iyz4ltWeUU6JTk8oTQLmoDqNKEbw37HyUH+gemyK7Oqvn4BffU9XEZuJbicbXfPN3lJ1JloX4J8aGAIDFvsQPAP58+AUYrh1Vs+VgH//2Q==') top left no-repeat;
+                    text-indent: 19px;
+                    display: inline-block;
+                    margin-left: 12px;
+                    &.checked {
+                        background: url('data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRBM0M5OTMxQkMwNjExRTQ4NUUwRDFDMTlERDgxRUE0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRBM0M5OTMyQkMwNjExRTQ4NUUwRDFDMTlERDgxRUE0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REEzQzk5MkZCQzA2MTFFNDg1RTBEMUMxOUREODFFQTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REEzQzk5MzBCQzA2MTFFNDg1RTBEMUMxOUREODFFQTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAOAA4DAREAAhEBAxEB/8QAbgAAAwEAAAAAAAAAAAAAAAAABgcICQEAAgMBAAAAAAAAAAAAAAAAAQIAAwQGEAABBAIBBAIDAAAAAAAAAAACAQMEBRESBwAhEwYxQSIVCBEAAgEDBAMAAAAAAAAAAAAAAQIAESESMVGhA2GB0f/aAAwDAQACEQMRAD8A05ju+lQKGPPv/wBPHeiUgXFxImCx5RjA2ivSnd021Rc7Gv3956552csaE6xImz5Zo14vZ5gd40kV3qg3SpHhCy0Uuf69kgW1NgW0UWxDaT4iyuraLnuipcqNkUyvTnaSBfN5/wA9Pp6AzzE1Ph3MKujuQpdZlXJlQ0YeRqckZTNK913G3nEBz8EJbdP1jsq2BFK8/YZT0+fDOHSEVITNGypm22ZwljOxVgyB0DWQTaAjZKX5KgaIvfOEXMq63v73HiCf/9k=') top left no-repeat;
+                    }
+                }
+                .left {
+                    float: left;
+                }
+                .right {
+                    float: right;
+                    .check-box {
+                        margin-right: 12px;
+                    }
+                }
+                .left li, .right li {
+                    margin-top: 5px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
             }
         }
         .part.location {
@@ -76,15 +129,15 @@ body {
             .location-form {
                 background: #4e4596;
                 position: absolute;
-                top: 24px;
+                top: 22px;
                 left: 16px;
                 right: 15px;
                 padding: 7px 5px 5px 5px;
                 display: none;
                 label {
                     color: #fff;
-                    margin-right: 4px;
                     font-size: 9px;
+                    cursor: pointer;
                 }
                 input[type="text"] {
                     height: 15px;
@@ -94,11 +147,15 @@ body {
                     @include border-radius(5px);
                 }
                 #state {
-                    width: 196px;
+                    width: 195px;
                     margin-bottom: 10px;
                 }
-                #city, #zip {
-                    width: 75px;
+                #city,
+                #zip {
+                    width: 71px;
+                }
+                .city {
+                    margin-left: 7px;
                 }
                 .or {
                     color: #f7d03e;

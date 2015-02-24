@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Calendar</title>
+    <title>Sidebar</title>
     <link href="css/main.css" rel="stylesheet">
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -24,16 +24,87 @@
                 </div>
                 <div class="part expand">
                     <div id="location-btn" class="button location-btn">EDIT LOCATION</div>
-                    <div>будут формы</div>
+                    <div class="block">
+                        <h4>OFFER TYPE</h4>
+                        <label class="check-box">
+                            <input type="checkbox">For Lease</label>
+                        <label class="check-box">
+                            <input type="checkbox">for Sale</label>
+                        <label class="check-box">
+                            <input type="checkbox">Both</label>
+                    </div>
+                    <div class="block clearfix">
+                        <h4>PROPERTY TYPE</h4>
+                        <ul class="left">
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Agricultural</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Health Care</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Hotel & Motel</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Industrial</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Land</label>
+                            </li>
+                        </ul>
+                        <ul class="right">
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Текст</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Текст</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Текст</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Текст</label>
+                            </li>
+                            <li>
+                                <label class="check-box">
+                                    <input type="checkbox">Текст</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h4>PRICE PRE UNIT</h4>
+                        <label>Min $<input type="text"></label>
+                        <label>to<input type="text"></label>
+                        <h4>SIZE</h4>
+                        <label>Min<input type="text"></label>
+                        <label>to<input type="text"></label>
+                        <span>sq ft</span>
+                    </div>
+                    <div class="block">
+                        <h4>KEYWORD</h4>
+                        <input type="text">
+                    </div>
                     <div class="button expand-btn">COLLAPSE</div>
                 </div>
                 <div class="part location">
                     <div class="button location-btn">EDIT LOCATION</div>
                     <div class="location-form">
-                        <label for="state">STATE</label><input type="text" id="state">
-                        <label for="city">CITY</label><input type="text" id="city">
+                        <label for="state">STATE</label>
+                        <input type="text" id="state">
+                        <label class="city" for="city">CITY</label>
+                        <input type="text" id="city">
                         <span class="or">OR</span>
-                        <label for="zip">ZIP</label><input type="text" id="zip">
+                        <label for="zip">ZIP</label>
+                        <input type="text" id="zip">
                         <input class="submit-btn" type="submit" value="DONE">
                     </div>
                 </div>

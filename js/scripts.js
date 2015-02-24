@@ -14,9 +14,18 @@ $(document).ready(function () {
 
     $('#expand-btn').click(function () {
         buttonClick("expand");
-    })
+    });
 
     $('#location-btn').click(function () {
         buttonClick("location");
-    })
+    });
+
+    $('.check-box').live('click', function () {
+        var checkStatus = $(this).find('input').prop("checked");
+        if (checkStatus) {
+            $(this).addClass('checked');
+        } else {
+            $(this).removeClass('checked');
+        }
+    });
 });
