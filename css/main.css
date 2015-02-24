@@ -55,16 +55,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /** Reset default styles end **/
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
 .clearfix {
   *zoom: 1;
 }
@@ -172,11 +162,35 @@ body {
 .sidebar-wrap .sidebar .part .block .right .check-box {
   margin-right: 12px;
 }
-.sidebar-wrap .sidebar .part .block .left li, .sidebar-wrap .sidebar .part .block .right li {
+.sidebar-wrap .sidebar .part .block .left li,
+.sidebar-wrap .sidebar .part .block .right li {
   margin-top: 5px;
 }
-.sidebar-wrap .sidebar .part .block .left li:first-child, .sidebar-wrap .sidebar .part .block .right li:first-child {
+.sidebar-wrap .sidebar .part .block .left li:first-child,
+.sidebar-wrap .sidebar .part .block .right li:first-child {
   margin-top: 0;
+}
+.sidebar-wrap .sidebar .part .block.price input[type="text"] {
+  width: 70px;
+  margin: 0 3px;
+  height: 13px;
+}
+.sidebar-wrap .sidebar .part .block.price span {
+  color: #b3aea5;
+  font-size: 11px;
+}
+.sidebar-wrap .sidebar .part .block.price h4.size {
+  clear: both;
+}
+.sidebar-wrap .sidebar .part .block.price .min-size {
+  margin-left: 28px;
+}
+.sidebar-wrap .sidebar .part .block.price .min-price {
+  margin-left: 18px;
+  margin-bottom: 5px;
+}
+.sidebar-wrap .sidebar .part .block.price label {
+  float: left;
 }
 .sidebar-wrap .sidebar .part.location {
   border: none;

@@ -2,16 +2,6 @@
 @import "compass/reset";
 /** Reset default styles end **/
 
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
 .clearfix {
     *zoom: 1;
     &:before, &:after {
@@ -115,11 +105,36 @@ body {
                         margin-right: 12px;
                     }
                 }
-                .left li, .right li {
+                .left li,
+                .right li {
                     margin-top: 5px;
                     &:first-child {
                         margin-top: 0;
                     }
+                }
+            }
+            .block.price {
+                input[type="text"] {
+                    width: 70px;
+                    margin: 0 3px;
+                    height: 13px;
+                }
+                span {
+                    color: #b3aea5;
+                    font-size: 11px;
+                }
+                h4.size {
+                    clear: both;
+                }
+                .min-size {
+                    margin-left: 28px;
+                }
+                .min-price {
+                    margin-left: 18px;
+                    margin-bottom: 5px;
+                }
+                label {
+                    float: left;
                 }
             }
         }
